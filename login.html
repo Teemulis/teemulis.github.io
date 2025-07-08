@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+    <a class="header1" href="index.html">Home</a>
+    <a class="header1" href="download.html">Download</a>
+    <a class="header1" href="about.html">About</a>
+    <a href="login.html"><img width="50px" src="login.jpg"></a>
+  </header>
+
+  <div class="container">
+    
+  <h1 class="toc-header" id="Login">Login</h1>
+  <br>
+<p>Owners can login here to access their account.</p>
+</div></div>
+<div class="container">
+    <div class="center">
+        <div class="card login">
+            <form onsubmit="login(); return false;">
+                <input id="username" placeholder="username" required="">
+                <input id="password" type="password" placeholder="password" required="">
+                <button class="button button-orange">Login</button>
+            </form>
+        </div>
+      
+    </div>
+</div>
+      
+<script language="javascript" type="text/javascript">
+function login() {
+    let username = document.getElementById('username').value;
+    let password = document.getElementById('password').value;
+
+    if (username == 'owner' && password == 'owner123') {
+        window.location.href = 'index.html';
+    } else {
+        alert('password or username is incorrect! Please try again.');
+    }
+}
+</script> 
+</body>
+</html>
