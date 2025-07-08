@@ -1,2 +1,2 @@
 # Teemulis
-Hello, 👋 Welcome to Teemulis!
+Hello, 👋 welcome to Teemulis!
