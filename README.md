@@ -1,3 +1,7 @@
-Eine Website für Teemulis
+# A Website for Teemulis
+Hello, Here we build our website (teemulis.github.io)!
+When you have troubles, find bugs or something else about our website please ope a issuse or start a discussion.
 
-[![Update sitemap.xml](https://github.com/Teemulis/teemulis.github.io/actions/workflows/update-sitemap.yml/badge.svg)](https://github.com/Teemulis/teemulis.github.io/actions/workflows/update-sitemap.yml)
+                      ¦-----------------------------¦
+                      ¦       **Thank You*          ¦
+                      ¦-----------------------------¦
