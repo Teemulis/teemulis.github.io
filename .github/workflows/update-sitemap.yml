@@ -27,5 +27,4 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.PERSONAL_TOKEN }}@github.com/${{ github.repository }}
           git add sitemap.xml
           git commit -m "🧭 Sitemap automatisch aktualisiert" || echo "Keine Änderungen zum Commit"
-          gi
-          t push
+          git push
