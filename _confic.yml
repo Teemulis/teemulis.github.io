@@ -3,4 +3,7 @@ description: Offizielle Website
 url: "https://teemulis.github.io"
 baseurl: ""  # wichtig: Leerzeichen nach Doppelpunkt!
 plugins:
-  - jekyll-sitemap
+
+
+  - name: generate-sitemap
+  uses: cicirello/generate-sitemap@v1.10.2
