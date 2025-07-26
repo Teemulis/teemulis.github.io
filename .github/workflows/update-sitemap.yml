@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 🍰 Repository auschecken
+      - name: 📦 Repository auschecken
         uses: actions/checkout@v4
 
       - name: 🐍 Python installieren
@@ -17,14 +17,14 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: 🚀 Sitemap generieren
+      - name: 🧭 Sitemap generieren
         run: python scripts/generate_sitemap.py
 
-      - name: 🍥 Änderungen committen & pushen
+      - name: 🚀 Änderungen committen & pushen
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git remote set-url origin https://x-access-token:${{ secrets.PERSONAL_TOKEN }}@github.com/${{ github.repository }}
           git add sitemap.xml
-          git commit -m "🧭 Sitemap automatisch aktualisiert" || echo "Keine Änderungen zum Commit"
+          git commit -m "🔄 Sitemap automatisch aktualisiert" || echo "Keine Änderungen zum Commit"
           git push
